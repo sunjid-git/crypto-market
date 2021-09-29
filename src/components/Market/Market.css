@@ -60,11 +60,9 @@
   background-color: rgb(39, 38, 38);
 }
 .get-details{
-  height: 80vh;
+  height: 60vh;
   text-align: center;
   justify-content: center;
-  /* background-color: rgb(184, 154, 154); */
-  margin-top: 10rem;
 }
 
 .get-details p{

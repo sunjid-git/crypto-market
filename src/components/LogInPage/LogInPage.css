@@ -1,0 +1,21 @@
+.login-form{
+    margin-top: 5rem;
+    width: 25%;
+    margin-bottom: 2em;
+}
+
+.get-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+.log-in{
+    /* margin-bottom: 3rem; */
+}
+
+.screen{
+    height: 80vh;
+}
