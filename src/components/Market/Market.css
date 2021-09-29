@@ -59,6 +59,12 @@
   border-radius: 10px;
   background-color: rgb(39, 38, 38);
 }
+
+.log-in:hover{
+  background-color: rgb(73, 72, 72);
+
+}
+
 .get-details{
   height: 60vh;
   text-align: center;
