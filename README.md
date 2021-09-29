@@ -1,6 +1,6 @@
-### `Crypto - Mania`
+### `Crypto - Stock`
 
-# [Live](https://crypto-stock.netlify.app/login)
+# [Live](https://crypto-stock.netlify.app/)
 
 ## `Functionality`
 1. Home
@@ -15,3 +15,7 @@
 * API - Coingecko.com
 
 ### `Deployment - Netlify`
+
+
+Approach - 
+* Crypto stock - is dynamic currency searching site. User can visit and search specific coin stock market using currency name.
