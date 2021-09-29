@@ -27,7 +27,6 @@ const Market = () => {
   return (
     <div className="crypto-market">
       <div className="crypto-market-header">
-
         <h1>Get the latest crypto market values...</h1>
 
         <input
@@ -41,6 +40,7 @@ const Market = () => {
       <div className="table-header">
         <div>#</div>
         <div>Name</div>
+        <div>ID</div>
         <div>Capital</div>
         <div>Current</div>
         <div>Highest</div>
@@ -53,6 +53,7 @@ const Market = () => {
 
       {filteredCurrency.map((currency) => (
         <Currency
+          id={currency.id}
           key={currency.id}
           name={currency.name}
           image={currency.image.small}

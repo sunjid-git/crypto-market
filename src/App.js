@@ -9,6 +9,7 @@ import Market from "./components/Market/Market";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Contact from "./components/Contact/Contact";
 import CurrencyDetails from "./components/Market/CurrencyDetails";
+import LogInPage from "./components/LogInPage/LogInPage";
 
 function App() {
   return (
@@ -31,8 +32,12 @@ function App() {
           <Contact />
         </Route>CurrencyDetails
 
-        <Route path="/currency/:name">
+        <Route path="/currency/:id">
           <CurrencyDetails />
+        </Route>
+
+        <Route path="/login">
+          <LogInPage />
         </Route>
 
         <Route path="*">

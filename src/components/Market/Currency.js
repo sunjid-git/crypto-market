@@ -3,8 +3,10 @@ import { useHistory } from "react-router";
 // import { Link } from "react-router-dom";
 
 const Currency = ({
+  id,
   image,
   name,
+
   capital,
   current,
   highest,
@@ -16,8 +18,8 @@ const Currency = ({
 
   let history = useHistory();
 
-  const showCurrencyDetails = (name) => {
-    const url = `/currency/${name}`;
+  const showCurrencyDetails = (id) => {
+    const url = `/currency/${id}`;
     history.push(url);
   };
 
@@ -28,6 +30,7 @@ const Currency = ({
           <img src={image} alt="" />
         </div>
         <div>{name}</div>
+        <div>{id}</div>
         <div>$ {capital}</div>
         <div>${current}</div>
         <div>$ {highest}</div>
@@ -43,9 +46,9 @@ const Currency = ({
         <div>
           <button
             className="goto-btn"
-            onClick={() => showCurrencyDetails(name)}
+            onClick={() => showCurrencyDetails(id)}
           >
-            Details
+            Invest
           </button>
 
           {/* <Link to={`/cryptoMarket/${name}`}>Details</Link> */}

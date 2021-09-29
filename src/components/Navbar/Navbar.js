@@ -25,9 +25,7 @@ const Navbar = () => {
       <div className="right-side">
         <Link to="/">Home</Link>
         <Link to="/cryptoMarket">Market</Link>
-        <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
-
         <Link to="/login">Log In  |  Sign In</Link>
 
         <button onClick={toggleNavbar}>

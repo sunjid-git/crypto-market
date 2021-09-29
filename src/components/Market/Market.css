@@ -5,7 +5,7 @@
   width: 80%;
   margin: 0 auto;
   padding: 1em;
-  background: linear-gradient(to left, #e6e6d3, #7fa2c5);
+  /* background: linear-gradient(to left, #e6e6d3, #7fa2c5); */
 }
 
 .crypto-market-header {
@@ -16,6 +16,8 @@
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
+  color:black;
+  background: linear-gradient(to left, #e6e6d3, #7fa2c5);
 }
 
 .green {
@@ -41,4 +43,35 @@
 
 .table-header div {
   font-weight: bolder;
+}
+
+
+/* currency details */
+
+.log-in img{
+  height: 35px;
+  margin-right: 1.5em;
+}
+.log-in{
+  background-color: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: rgb(39, 38, 38);
+}
+.get-details{
+  height: 80vh;
+  text-align: center;
+  justify-content: center;
+  /* background-color: rgb(184, 154, 154); */
+  margin-top: 10rem;
+}
+
+.get-details p{
+  font-size: 2em;
+}
+
+.get-details a{
+  text-decoration: none;
+  color: #fcfcfc;
 }

@@ -2,6 +2,8 @@ import React from "react";
 import "./HomePage.css";
 import Slide from "../Carousel/Slide";
 import { Link } from "react-router-dom";
+import Market from "../Market/Market";
+import Contact from "../Contact/Contact";
 // import Market from "../Market/Market";
 
 const HomePage = () => {
@@ -31,7 +33,8 @@ const HomePage = () => {
           <Slide />
         </div>
       </div>
-      {/* <Market /> */}
+      <Market />
+      <Contact/>
     </>
   );
 };
