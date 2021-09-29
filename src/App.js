@@ -1,12 +1,14 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Market from "./components/Market/Market";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Contact from "./components/Contact/Contact";
+import CurrencyDetails from "./components/Market/CurrencyDetails";
 
 function App() {
   return (
@@ -27,11 +29,16 @@ function App() {
 
         <Route path="/contact">
           <Contact />
+        </Route>CurrencyDetails
+
+        <Route path="/currency/:name">
+          <CurrencyDetails />
         </Route>
 
         <Route path="*">
           <NoMatch />
         </Route>
+        
       </Switch>
       <Footer />
     </Router>

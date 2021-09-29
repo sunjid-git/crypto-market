@@ -1,4 +1,6 @@
 import React from "react";
+import { useHistory } from "react-router";
+// import { Link } from "react-router-dom";
 
 const Currency = ({
   image,
@@ -10,6 +12,15 @@ const Currency = ({
   lastUpdated,
   priceChangePercentage,
 }) => {
+  // console.log(name)
+
+  let history = useHistory();
+
+  const showCurrencyDetails = (name) => {
+    const url = `/currency/${name}`;
+    history.push(url);
+  };
+
   return (
     <>
       <div className="currency-list">
@@ -23,7 +34,6 @@ const Currency = ({
         <div> $ {lowest}</div>
         <div>{lastUpdated} </div>
         <div>
-          {" "}
           {priceChangePercentage < 0 ? (
             <p className="red">{priceChangePercentage} %</p>
           ) : (
@@ -31,7 +41,14 @@ const Currency = ({
           )}{" "}
         </div>
         <div>
-          <button className="goto-btn">Details</button>
+          <button
+            className="goto-btn"
+            onClick={() => showCurrencyDetails(name)}
+          >
+            Details
+          </button>
+
+          {/* <Link to={`/cryptoMarket/${name}`}>Details</Link> */}
         </div>
       </div>
       <hr />

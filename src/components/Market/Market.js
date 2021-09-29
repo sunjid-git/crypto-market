@@ -22,7 +22,7 @@ const Market = () => {
   const filteredCurrency = currencies.filter((currency) =>
     currency.name.toLowerCase().includes(search.toLowerCase())
   );
-  console.log("filteredCurrency Value - ", filteredCurrency);
+  // console.log("filteredCurrency Value - ", filteredCurrency);
 
   return (
     <div className="crypto-market">
