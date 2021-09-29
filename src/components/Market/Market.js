@@ -32,10 +32,22 @@ const Market = () => {
 
         <input
           type="text"
-          placeholder="Enter currency..."
+          placeholder="Get the currency status..."
           onChange={getCurrency}
         />
       </div>
+
+      <div className="table-header">
+        <div></div>
+        <div>Name</div>
+        <div>Capital</div>
+        <div>Current</div>
+        <div>Highest</div>
+        <div>Lowest</div>
+        <div>Last updated</div>
+        <div>Price Change</div>
+      </div>
+      <hr />
 
       {filteredCurrency.map((currency) => (
         <Currency

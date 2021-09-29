@@ -8,44 +8,31 @@ const Currency = ({
   highest,
   lowest,
   lastUpdated,
-  priceChangePercentage
+  priceChangePercentage,
 }) => {
   return (
-    <div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Capital</th>
-            <th scope="col">current</th>
-            <th scope="col">highest</th>
-            <th scope="col">lowest</th>
-            <th scope="col">lastUpdated</th>
-            <th scope="col">priceChangePercentage</th>
-
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            {/* <th scope="row"></th> */}
-            <td>
-                <img src={image} alt="" />
-            </td>
-            <td>{name}</td>
-            <td>{capital}</td>
-            <td>{current}</td>
-            <td>{highest}</td>
-            <td>{lowest}</td>
-            <td>{lastUpdated}</td>
-            <td>{priceChangePercentage}</td>
-          </tr>
-
-        </tbody>
-      </table>
-
-      <div></div>
-    </div>
+    <>
+      <div className="currency-list">
+        <div>
+          <img src={image} alt="" />
+        </div>
+        <div>{name}</div>
+        <div>{capital}</div>
+        <div>{current}</div>
+        <div>{highest}</div>
+        <div> {lowest}</div>
+        <div>{lastUpdated} </div>
+        <div>
+          {" "}
+          {priceChangePercentage < 0 ? (
+            <p className="red">{priceChangePercentage}</p>
+          ) : (
+            <p className="green">{priceChangePercentage}</p>
+          )}{" "}
+        </div>
+      </div>
+      <hr />
+    </>
   );
 };
 
