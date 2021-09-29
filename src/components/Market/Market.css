@@ -1,32 +1,22 @@
-.crypto-market {
+
+.crypto-market{
   min-height: 80vh;
   height: 100%;
   width: 80%;
   margin: 0 auto;
   padding: 1em;
-  background-color: rgb(244, 247, 248);
-
-
-background: linear-gradient(to left, #e6e6d3, #7fa2c5); 
-
+  background: linear-gradient(to left, #e6e6d3, #7fa2c5);
 }
 
 .crypto-market-header {
   text-align: center;
 }
-.crypto-market-header input {
-  color: white;
+.search-field {
   border: none;
   margin: 1rem;
   padding: 1rem;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  border-radius: 10px;
 }
- 
 
 .green {
   color: green;
@@ -36,7 +26,6 @@ background: linear-gradient(to left, #e6e6d3, #7fa2c5);
 }
 
 /* table formation */
-
 .table-header,
 .currency-list {
   display: flex;

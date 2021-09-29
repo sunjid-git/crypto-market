@@ -27,13 +27,14 @@ const Market = () => {
   return (
     <div className="crypto-market">
       <div className="crypto-market-header">
-        <h1>{currencies.length}</h1>
-        <h1>Get the latest market values...</h1>
+
+        <h1>Get the latest crypto market values...</h1>
 
         <input
           type="text"
           placeholder="Get the currency status..."
           onChange={getCurrency}
+          className="search-field"
         />
       </div>
 

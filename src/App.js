@@ -5,12 +5,13 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Market from "./components/Market/Market";
+import NoMatch from "./components/NoMatch/NoMatch";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
     <Router>
       <Navbar />
-
       <Switch>
         <Route exact path="/">
           <Home />
@@ -23,8 +24,15 @@ function App() {
         <Route path="/cryptoMarket">
           <Market />
         </Route>
-      </Switch>
 
+        <Route path="/contact">
+          <Contact />
+        </Route>
+
+        <Route path="*">
+          <NoMatch />
+        </Route>
+      </Switch>
       <Footer />
     </Router>
   );

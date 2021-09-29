@@ -1,0 +1,12 @@
+.no-match {
+  color: red;
+  min-height: 80vh;
+  margin: 0;
+  background: linear-gradient(to left, #e6e6d3, #7fa2c5);
+  text-align: center;
+  justify-content: center;
+}
+
+.no-match p{
+    font-size: 20rem;
+}

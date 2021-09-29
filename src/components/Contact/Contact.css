@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bolder;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea {
+  border: none;
+  /* border-bottom: 1px solid gray; */
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: rgb(226, 235, 243);
+}
+form button {
+  border: none;
+  padding: 0.5rem 2.5rem;
+  font-weight: bolder;
+  color: aliceblue;
+  background-color: rgb(36, 34, 34);
+  border-radius: 8px;
+}
+
+form button:hover {
+  background-color: rgb(68, 63, 63);
+}

@@ -4,11 +4,3 @@
   box-sizing: border-box;
   
 }
-
-:root{
-  --text-green-light: rgb(30, 177, 30);
-  --text-green-dark: rgb(18, 133, 18);
-  --bg-color-light: #2d3236;
-  --bg-color-dark: #121619;
-
-}

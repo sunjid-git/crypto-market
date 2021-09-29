@@ -17,14 +17,14 @@ const Navbar = () => {
         <img src={logo} alt="" /> 
         <div className="hidden-links">
           <Link to="/">Home</Link>
-          <Link to="/menu">Menu</Link>
+          <Link to="/cryptoMarket">Market</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </div>
       <div className="right-side">
         <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
+        <Link to="/cryptoMarket">Market</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
         <button onClick={toggleNavbar}>
