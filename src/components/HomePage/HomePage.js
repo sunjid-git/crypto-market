@@ -19,7 +19,7 @@ const HomePage = () => {
         </div>
 
         <div>
-          <Link to="/market" className="market-cap-btn">
+          <Link to="/cryptoMarket" className="market-cap-btn">
             Today's Market Cap
           </Link>
         </div>

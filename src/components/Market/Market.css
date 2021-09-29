@@ -1,0 +1,11 @@
+.crypto-market{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+    background-color: rgb(244, 247, 248);
+}
+
+.crypto-market-header{
+    text-align: center;
+}
