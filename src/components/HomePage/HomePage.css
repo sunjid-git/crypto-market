@@ -1,0 +1,35 @@
+.home-page{
+    display:flex;
+    flex-direction: row;
+    height:80vh;
+}
+.homepage-left,
+.homepage-right{
+    flex: 1;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.homepage-left{
+    justify-content: center; 
+}
+
+.market-cap-btn{
+    text-decoration: none;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: rgb(49, 53, 49);
+    color: white;
+}
+
+.market-cap-btn:hover{
+    color: white;
+    background-color: rgb(75, 79, 75);
+}
+
+@media only screen and (max-width:680px){
+    .home-page{
+        flex-direction: column;
+    }
+}
