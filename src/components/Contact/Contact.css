@@ -1,4 +1,4 @@
-h1 {
+h2 {
   text-align: center;
   margin-top: 1rem;
   font-weight: bolder;
@@ -17,7 +17,7 @@ form textarea {
   padding: 0.5rem 1rem;
   background-color: rgb(226, 235, 243);
 }
-form button {
+.goto-btn {
   border: none;
   padding: 0.5rem 2.5rem;
   font-weight: bolder;
@@ -26,6 +26,6 @@ form button {
   border-radius: 8px;
 }
 
-form button:hover {
+.goto-btn:hover {
   background-color: rgb(68, 63, 63);
 }

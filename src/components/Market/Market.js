@@ -39,7 +39,7 @@ const Market = () => {
       </div>
 
       <div className="table-header">
-        <div></div>
+        <div>#</div>
         <div>Name</div>
         <div>Capital</div>
         <div>Current</div>
@@ -47,6 +47,7 @@ const Market = () => {
         <div>Lowest</div>
         <div>Last updated</div>
         <div>Price Change</div>
+        <div>Get Details</div>
       </div>
       <hr />
 

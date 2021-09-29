@@ -17,18 +17,21 @@ const Currency = ({
           <img src={image} alt="" />
         </div>
         <div>{name}</div>
-        <div>{capital}</div>
-        <div>{current}</div>
-        <div>{highest}</div>
-        <div> {lowest}</div>
+        <div>$ {capital}</div>
+        <div>${current}</div>
+        <div>$ {highest}</div>
+        <div> $ {lowest}</div>
         <div>{lastUpdated} </div>
         <div>
           {" "}
           {priceChangePercentage < 0 ? (
-            <p className="red">{priceChangePercentage}</p>
+            <p className="red">{priceChangePercentage} %</p>
           ) : (
-            <p className="green">{priceChangePercentage}</p>
+            <p className="green">{priceChangePercentage} %</p>
           )}{" "}
+        </div>
+        <div>
+          <button className="goto-btn">Details</button>
         </div>
       </div>
       <hr />
